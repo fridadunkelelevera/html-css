@@ -1,0 +1,38 @@
+/* Så här importerar ni andra css filer i main.css */
+@import './forms.css';
+@import './buttons.css';
+
+body {
+  font-family: "Red Hat Display", sans-serif; /* Google fonts */
+  font-optical-sizing: auto;
+  font-weight: 400; /* Regular Weight */
+  font-style: normal;
+}
+
+p {
+  text-decoration: underline;
+}
+
+/* Green color on title */
+.green {
+  color: green;
+}
+
+header {
+  border-color: brown;
+  border-style: solid;
+}
+
+h1:hover {
+  background-color: blueviolet;
+}
+
+/* Css Box model */
+section {
+  padding: 50px;
+  border: 5px solid violet;
+  border-bottom-color: blue;
+  border-bottom-width: 20px;
+  border-bottom-style: dotted;
+  margin: 25px;
+}

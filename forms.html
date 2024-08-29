@@ -1,0 +1,52 @@
+<form>
+  <!-- Input text -->
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name-input" placeholder="Frida Dunkel"><br>
+  
+  <!-- Input email -->
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email-input" placeholder="frida.dunkel@elevera.org"><br>
+
+  
+  <!-- Input password -->
+  <label for="password">Lösenord:</label><br>
+  <input type="password" id="password" name="password-input" placeholder="******"><br>
+
+  <!-- Input radio -->
+  <!-- name-attributet är ett måste -->
+  <fieldset>
+    <legend>Välj en frukt:</legend>
+    <input type="radio" id="apple" name="fruits" value="Äpple">
+    <label for="apple">Äpple</label><br>
+    <input type="radio" id="banana" name="fruits" value="Banan">
+    <label for="banana">Banan</label><br>
+    <input type="radio" id="mango" name="fruits" value="Mango">
+    <label for="mango">Mango</label>
+  </fieldset>
+
+  <!-- Input checkbox -->
+  <fieldset>
+    <legend>Välj flera frukter:</legend>
+    <input type="checkbox" id="apple" name="more-fruits" value="Äpple">
+    <label for="apple">Äpple</label><br>
+    <input type="checkbox" id="banana" name="more-fruits" value="Banan">
+    <label for="banana">Banan</label><br>
+    <input type="checkbox" id="mango" name="more-fruits" value="Mango">
+    <label for="mango">Mango</label>
+  </fieldset>
+
+  <!-- Select/Dropdown -->
+  <!-- name-attributet är ett måste -->
+  <label for="vegitabales">Välj en grönsak:</label><br>
+  <select name="vegitabales" id="vegitabales">
+    <option>Välj en grönsak</option>
+    <option value="tomato">Tomat</option>
+    <option value="sallad">Sallad</option>
+    <option value="cucumber">Gurka</option>
+  </select>
+  
+  <!-- Input type submit används när ett formulär har action-attribut:
+    <input type="submit" value="Submit">
+    Då behöver vi blanda in Php eller JavaScript för att hantera datan från formuläret.  
+  -->
+</form> 
