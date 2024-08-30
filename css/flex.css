@@ -1,0 +1,30 @@
+.flex-container {
+  display: flex;
+  flex-flow: wrap;
+  border: 1px solid red;
+  padding: 10px;
+}
+
+/* Mobil */
+.flex-item {
+  padding: 20px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  width: 100%;
+  /* Or this insted of width & box-sizing */
+  /* width: calc(50% - 40px - 1.6px); */
+}
+
+/* Padda */
+@media screen and (min-width: 768px) {
+  .flex-item {
+    width: 50%;
+  }
+}
+
+/* Dator */
+@media screen and (min-width: 1024px) {
+  .flex-item {
+    width: 25%;
+  }
+}

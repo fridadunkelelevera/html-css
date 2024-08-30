@@ -1,0 +1,12 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 100px auto auto;
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #fa8072;
+  padding: 10px;
+  margin: 5px;
+}

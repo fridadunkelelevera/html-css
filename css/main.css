@@ -1,12 +1,20 @@
 /* Så här importerar ni andra css filer i main.css */
 @import './forms.css';
 @import './buttons.css';
+@import './grid.css';
+@import './flex.css';
+@import './mobile.css';
 
 body {
   font-family: "Red Hat Display", sans-serif; /* Google fonts */
   font-optical-sizing: auto;
   font-weight: 400; /* Regular Weight */
   font-style: normal;
+  font-size: 16px;
+}
+
+main {
+  margin: 100px 0;
 }
 
 p {
@@ -16,6 +24,12 @@ p {
 /* Green color on title */
 .green {
   color: green;
+  background-color: var(--bs-blue);
+}
+
+button.btn-primary {
+  background-color: #8064A2;
+  border-color: #8064A2;
 }
 
 header {
@@ -35,4 +49,17 @@ section {
   border-bottom-width: 20px;
   border-bottom-style: dotted;
   margin: 25px;
+  width: 300px;
+}
+
+.content-box-sizing {
+  box-sizing: content-box;
+}
+
+.border-box-sizing {
+  box-sizing: border-box;
+}
+
+.github-icon {
+  width: 40px;
 }
