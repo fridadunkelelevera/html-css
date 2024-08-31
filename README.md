@@ -6,3 +6,6 @@ Historia, HTML Element och attribut, Semantisk HTML, Heading, Paragraph, HTML Gu
 
 ## Förläsning 2
 Media, File paths, Formulär intro, CSS Box model och Inlämningsuppgift 1.
+
+## Förläsning 3
+Responsiv design, Flexbox, Grid, Media Queries och Ramverk (Bootstrap).
