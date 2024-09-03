@@ -5,6 +5,16 @@
 @import './flex.css';
 @import './mobile.css';
 
+/* CSS Variabler */
+:root {
+  /* Colors */
+  --blue: #0000ff;
+  --pink: pink;
+  /* Font */
+  --font-size-medium: 22px;
+  --font-weight: bold;
+}
+
 body {
   font-family: "Red Hat Display", sans-serif; /* Google fonts */
   font-optical-sizing: auto;
@@ -15,6 +25,10 @@ body {
 
 main {
   margin: 100px 0;
+}
+
+.blue-text-color {
+  color: var(--blue);
 }
 
 p {
@@ -61,5 +75,12 @@ section {
 }
 
 .github-icon {
-  width: 40px;
+  width: 400px;
+}
+
+/* Loading attribute */
+.photos {
+  object-fit: cover;
+  height: 600px;
+  width: 1000px;
 }
