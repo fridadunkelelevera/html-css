@@ -31,15 +31,11 @@ main {
   color: var(--blue);
 }
 
-p {
-  text-decoration: underline;
-}
-
 /* Green color on title */
-.green {
+/* .green {
   color: green;
   background-color: var(--bs-blue);
-}
+} */
 
 button.btn-primary {
   background-color: #8064A2;
@@ -47,16 +43,35 @@ button.btn-primary {
 }
 
 header {
-  border-color: brown;
-  border-style: solid;
+  background-color: #ffffff;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 4px 4px 4px lightgray;
+  padding: 20px;
 }
 
-h1:hover {
-  background-color: blueviolet;
+nav {
+  margin: 0 20px;
 }
+
+nav a {
+  margin: 0 10px;
+  padding: 4px;
+}
+
+nav a:focus-visible {
+  outline: red solid 2px;
+  border-radius: 10px;
+}
+
+/* h1:hover {
+  background-color: blueviolet;
+} */
 
 /* Css Box model */
-section {
+.box-model {
   padding: 50px;
   border: 5px solid violet;
   border-bottom-color: blue;
@@ -83,4 +98,18 @@ section {
   object-fit: cover;
   height: 600px;
   width: 1000px;
+}
+
+.hover-test:hover > .demo-position {
+  display: block;
+}
+
+.demo-position {
+  position: absolute;
+  display: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 2px 10px 10px;
+  border: 1px solid black;
 }

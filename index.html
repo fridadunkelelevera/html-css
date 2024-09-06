@@ -6,6 +6,8 @@
   <!-- Responsive design - Viewport meta tag (krav) -->
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="css/main.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,23 +37,110 @@
 <body>
   <header id="header" class="green">
     <!-- Huvudrubrik, endast en h1 per sida -->
-    <h1 class="green">Första föreläsningen</h1>
+    <div class="hover-test">
+      <h1>Första föreläsningen</h1>
+      <p class="demo-position">Rubrik under titeln</p>
+    </div>
+    <nav>
+      <a href="https://www.boid.se/">Om oss</a>
+      <a href="https://www.boid.se/">Projekt</a>
+      <a href="https://www.boid.se/">Kontakt</a>
+    </nav>
+    <img src="assets/images/favicon.png" alt="" />
   </header>
   <main>
     <!-- Underrubrik, går bra med fler h2-h6 -->
     <h2>Underrubrik</h2>
-    <p class="blue-text-color">Introduktion HTML</p>
+    <p class="blue-text-color blue_text_color">Introduktion HTML</p>
     <p class="blue-text-color">Introduktion CSS</p>
-    <b>Bold text här, 20 m<sup class="blue-text-color">2</sup></b><br>
+    <b>Bold text här, 20 m<sup class="blue-text-color">2</sup></b>
     <i>Kursiv text</i>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo asperiores quidem veritatis, ullam
       suscipit
       ad placeat dolorum earum eum ea eligendi molestias quas alias fugiat, mollitia, reprehenderit vitae tempora
       atque!
     </p>
-    <a href="https://www.boid.se/">boid</a>
+   <a href="https://www.boid.se/">boid</a>
+    <section style="height: 100vh; background-color: darkslategrey; display: flex;">
+      <!-- <div class="text-block" style="width: 50%;">
+        <h2>Section 1</h2>
+        <p>Text här</p>
+      </div>
+      <div class="media-block" style="background-image: url('/assets/images/sodra_reddot.png'); width: 50%;">
+      </div> -->
+      <div style="width: 50%;">
+        <img class="media-block" src="/assets/images/sodra_reddot.png" alt="" style="width: 100%;">
+        <div>
+          <h2>ghadsjasdjkl</h2>
+          <p>jlakdsdsalkj klhj jhsbjksad</p>
+        </div>
+      </div>
+      <div style="width: 50%;">
+        <img class="media-block" src="/assets/images/sodra_reddot.png" alt="" style="width: 100%;">
+        <div>
+          <h2>ghadsjasdjkl dsadas</h2>
+          <p>jlakdsdsalkj klhj jhsbjksad kldsa hjdsahj dsad</p>
+        </div>
+      </div>
+    </section>
+    <section style="height: 100vh; background-color: lightseagreen;">
+      Section 2
+    </section>
+    <section style="background-color: pink; display: flex;">
+      <div>
+        <img class="media-block" src="/assets/images/sodra_reddot.png" alt="" style="width: 100%;">
+        <div style="padding: 30px; display: flex;
+    flex-direction: column;">
+          <h2>title</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur asperiores ab est fuga, at dolorum quas, eos corrupti libero velit voluptates! Cum molestias, at dolore illum nemo in velit quo!</p>
+          <button>button</button>
+        </div>
+      </div>
+      <div>
+        <img class="media-block" src="/assets/images/sodra_reddot.png" alt="" style="width: 100%;">
+        <div style="padding: 30px; display: flex;
+    flex-direction: column;">
+          <h2>title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, neque ex. Repellendus, ipsa! Expedita amet sed rerum magnam. Maxime, magni? Repellat, voluptatibus? Obcaecati hic aliquam aspernatur sunt aliquid corporis eaque?</p>
+          <button>button</button>
+        </div>
+      </div>
+      <div>
+        <img class="media-block" src="/assets/images/sodra_reddot.png" alt="" style="width: 100%;">
+        <div style="padding: 30px; display: flex;
+    flex-direction: column;">
+          <h2>title</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nisi pariatur cum modi quas facere voluptatibus officia sed tenetur, temporibus necessitatibus quidem libero recusandae cupiditate illum, iste dolore dignissimos voluptatum.</p>
+          <button>button</button>
+        </div>
+      </div>
+    </section>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Default radio
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label class="form-check-label" for="flexRadioDefault2">
+        Default checked radio
+      </label>
+    </div>
+
+    <!-- List -->
+    <!-- <ul>
+      <li>Hej Första listan</li>
+      <li>Hej Andra listan</li>
+      <li>Hej Tredje listan</li>
+    </ul>
+    <ol>
+      <li>Hej Första listan</li>
+      <li>Hej Andra listan</li>
+      <li>Hej Tredje listan</li>
+    </ol> -->
     <!-- Css Box model -->
-    <section class="blue-text-color">
+    <section class="box-model blue-text-color">
       Hej jag heter Frida!
     </section>
     <button>För muspekaren över mig</button>
@@ -70,15 +159,6 @@
     <img class="github-icon" src="/assets/images/github.svg" alt="GitHub SVG icon inside img element" />
     <!-- <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="native svg-icon iconGitHub" viewBox="0 0 18 18"><path fill="currentColor" d="M9 1a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 9 1"/></svg> -->
 
-    <!-- 
-    Föreläsning 4:
-    Filstorlekar och loading attribut 
-    CSS Variabler
-    Återanvänd styling för ett element
-    Visa exempel med *
-    Visa exempel på Minifierad CSS 
-    -->
-
     <!-- Loading attribute -->
     <img class="photos" src="/assets/images/eniac.png" alt="Women sitting in front of Eniac computer" loading="lazy" />
     <img class="photos" src="assets/images/world_wide_web.jpg" alt="Tim Burners Lee in front of a computer" loading="lazy" />
@@ -87,10 +167,10 @@
     <img class="photos" src="assets/images/WASlogo.png" alt="WAS logo" loading="lazy" />
    
     <!-- Box sizing -->
-    <section class="content-box-sizing">
+    <section class="box-model content-box-sizing">
       box-sizing: content-box;
     </section>
-    <section class="border-box-sizing">
+    <section class="box-model border-box-sizing">
       box-sizing: border-box;
     </section>
 
