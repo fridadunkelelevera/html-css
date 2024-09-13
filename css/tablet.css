@@ -3,4 +3,12 @@
   body {
     background-color: blueviolet;
   }
+
+  button.mobile-menu-button {
+    display: none;
+  }
+
+  nav.desktop-menu {
+    display: block;
+  }
 }

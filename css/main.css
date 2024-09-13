@@ -1,4 +1,5 @@
 /* Så här importerar ni andra css filer i main.css */
+@import './tablet.css';
 @import './forms.css';
 @import './buttons.css';
 @import './grid.css';
@@ -13,6 +14,7 @@
   /* Font */
   --font-size-medium: 22px;
   --font-weight: bold;
+  --margin-top: 22px;
 }
 
 body {
@@ -23,8 +25,13 @@ body {
   font-size: 16px;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 main {
   margin: 100px 0;
+  background-color: #0000;
 }
 
 .blue-text-color {
@@ -38,9 +45,105 @@ main {
 } */
 
 button.btn-primary {
+  --button-color-blue: blue; /* Local varible */
   background-color: #8064A2;
   border-color: #8064A2;
+  color: var(--blue);
 }
+
+.custom-button {
+  background-color: #8064A2;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 10px 0;
+}
+
+.custom-button:hover {
+  background-color: #5e28a0;
+  color: #ffffff;
+}
+
+/* .scale:hover {
+  transform: scale(1.5);
+} */
+
+.btn-transition:hover {
+  /* "transition" är shorthand för transition-property, transition-duration, transition-timing-function och transition-delay */
+  transition: background-color 0.5s linear;
+  /* transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear; */
+  /* transition-property: background-color; Vilken property vi vill föra effekten på */
+  /* transition-duration: 0.5s; Hur lång dit övergången ska ta */
+  /* transition-timing-function: linear; Vilken typ av kurva övergången ska använda */
+  /* transition-delay: 1s; Tidsfördröjning */
+}
+
+.btn-animation:hover {
+  /* "animation" är shorthand för animation-name, animation-duration, animation-delay, animation-iteration-count, animation-direction, animation-timing-function och animation-fill-mode */
+  animation: buttonAnimation 1s linear infinite alternate;
+  color: #ffffff;
+  /* animation-name: buttonAnimation; Namn på animationens keyframe */
+  /* animation-duration: 1s; Hur länge animationen ska pågå */
+  /* animation-delay: 0.2s; Tidsfördröjning, när animationen ska starta */
+  /* animation-iteration-count: infinite; Antal gånger animationen ska köras (infinite = Forever) */
+  /* animation-direction: alternate; Animationen spelas forwards, backwards or in alternate cycles. */
+  /* animation-timing-function: linear; Vilken typ av kurva animationen ska använda */
+  /* animation-fill-mode: foward; Vilken styling ska animationen ha när @keyframes inte är aktiv  */
+}
+
+/* @keyframes buttonAnimation {
+  0% {
+    background-color: #8064A2;
+  }
+  100% {
+    background-color: #5e28a0;
+  }
+} */
+@keyframes buttonAnimation {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+i.fa-undo {
+  font-size: 40px;
+}
+
+.loader {
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scaleX(-1);
+  }
+  100% {
+    transform: rotate(360deg) scaleX(-1);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg) scaleX(-1);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scaleX(-1);
+  }
+}
+
 
 header {
   background-color: #ffffff;
@@ -50,6 +153,50 @@ header {
   align-items: center;
   box-shadow: 4px 4px 4px lightgray;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #ffffff;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 10;
+}
+
+.mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 140px;
+}
+
+.show-icon {
+  display: block !important;
+}
+
+i.fa-bars,
+i.fa-times {
+  display: none;
+}
+
+button.mobile-menu-button {
+  width: auto;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
 }
 
 nav {
@@ -113,3 +260,16 @@ nav a:focus-visible {
   margin: 2px 10px 10px;
   border: 1px solid black;
 }
+
+footer {
+  background-color: bisque;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 80px;
+}
+/* 
+.footer-item {
+} */
+
