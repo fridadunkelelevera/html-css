@@ -17,6 +17,10 @@
   --margin-top: 22px;
 }
 
+.johan {
+  color: #0000ff;
+}
+
 body {
   font-family: "Red Hat Display", sans-serif; /* Google fonts */
   font-optical-sizing: auto;
