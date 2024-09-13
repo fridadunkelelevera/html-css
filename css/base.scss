@@ -1,0 +1,33 @@
+$white: antiquewhite;
+$fontMedium: 20px;
+
+@mixin desktop-and-up {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+nav {
+  background-color: $white;
+
+  a {
+    text-decoration: underline;
+
+    @include desktop-and-up {
+      text-decoration: none;
+    }
+  }
+}
+
+.nav {
+  width: 100%;
+  &__item {
+    background-color: pink;
+  }
+  &__link {
+    color: black;
+    &--active {
+      display: block
+    }
+  }
+}

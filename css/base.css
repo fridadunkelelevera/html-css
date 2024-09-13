@@ -1,0 +1,24 @@
+nav {
+  background-color: antiquewhite;
+}
+nav a {
+  text-decoration: underline;
+}
+@media screen and (min-width: 1200px) {
+  nav a {
+    text-decoration: none;
+  }
+}
+
+.nav {
+  width: 100%;
+}
+.nav__item {
+  background-color: pink;
+}
+.nav__link {
+  color: black;
+}
+.nav__link--active {
+  display: block;
+}/*# sourceMappingURL=base.css.map */
